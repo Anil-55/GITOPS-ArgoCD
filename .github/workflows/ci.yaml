@@ -87,7 +87,7 @@ jobs:
         - name: checkout code
           uses: actions/checkout@v4
           with:
-            token: ${{ secrets.GH_PAT }}
+            persist-credentials: false  # IMPORTANT!
 
         - name: Update tag in kubernetes deployment manifest
           run: | 
