@@ -81,7 +81,7 @@ jobs:
     updatek8s:
         runs-on: ubuntu-latest
 
-        needs: [build, docker, code-quality]
+        needs: [build, docker]
 
         steps:
         - name: checkout code
